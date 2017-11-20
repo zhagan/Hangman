@@ -6,7 +6,7 @@ var allPhrases, abc, guessedLet, unguessedLet, attempts, phrase, phraseHidden, t
 
 function setup() {
     // starting phrase options and alphabet
-    allPhrases = ['MINI MOOG', 'BUCHLA', 'ARP 2600', 'GRANULAR SYNTHESIS', 'AKAI MPC', 'MUTABLE INSTRUMENTS'];
+    allPhrases = ['MINI MOOG', 'BUCHLA', 'ARP TWENTY SIX HUNDRED', 'GRANULAR SYNTHESIS', 'AKAI MPC', 'MUTABLE INSTRUMENTS', 'SAMPLERS', 'DRUM MACHINES'];
     abc = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     guessedLet = [];
     unguessedLet = abc;
