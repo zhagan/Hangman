@@ -5,14 +5,9 @@
   flex: 1;
   padding-left: 10vw;
   padding-right: 10vw;
-  padding-top: calc(70px + 4vw);
+  padding-top: 1vw;
   padding-bottom: calc(60px + 1vw);
-  background-image: url("../images/regal.png");
-}
-
-nav {
-  background-color: #4aaaa5;
-  border-bottom: 8px double #d8d8d8;
+  background-image: url("../images/synth.png");
 }
 
 /* Panels*/
@@ -21,6 +16,7 @@ nav {
   background-color: #fff;
   border: 1px solid #eee;
   padding: 5%;
+  text-align: center;
 }
 
 /* Sticky footer styles */
@@ -65,7 +61,7 @@ p, a, h3,h5 {
 
 h2 {
   font-size: calc(16px + 1vw);
-  color: #4aaaa5;
+  color: #000000;
 }
 
 h3 {
@@ -75,7 +71,7 @@ h3 {
 
 h4 {
   font-size: calc(14px + 0.5vw);
-  color: #4aaaa5;
+  color: #000000;
 }
 
 h5 {
@@ -88,15 +84,6 @@ p {
   font-size: calc(12px + 0.5vw);
   color: #777;
 }
-/*aside image sizing */
-aside img {
-  width: 100%;
-}
-
-aside img:hover {
-  filter: drop-shadow(8px 8px 8px grey);
-}
-
 /* ------Hangman Site Only Style ------*/
 
 
@@ -123,7 +110,7 @@ aside img:hover {
 /*Win / Lose Messages*/
 #win, #lose {
   padding: 30px;
-  background-color: #4aaaa5;
+  background-color: #000000;
   color: #fff;
   font-weight: bold;
   border: 2px dotted #fff;
