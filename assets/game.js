@@ -1,11 +1,11 @@
 // javascript program for hangman
 // Zack Hagan
-// 11/5/17
+
 
 var allPhrases, abc, guessedLet, unguessedLet, attempts, phrase, phraseHidden, textInput, letter;
 
 function setup() {
-    // starting phrase options and alphabet
+    //setup all the arrays and variables
     allPhrases = ['MINI MOOG', 'BUCHLA', 'ARP TWENTY SIX HUNDRED', 'GRANULAR SYNTHESIS', 'AKAI MPC', 'MUTABLE INSTRUMENTS', 'SAMPLERS', 'DRUM MACHINES'];
     abc = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     guessedLet = [];
@@ -16,13 +16,13 @@ function setup() {
     document.getElementById('lose').style.display = 'none';
     document.getElementById('win').style.display = 'none';
     document.getElementById('input').style.display = 'block';
-    // console.log('setupExecuted');
+
 }
 
 setup();
 //select a random phrase from allPhrases
 phrase = allPhrases[Math.floor(Math.random()*(allPhrases.length))];
-// console.log(phrase);
+
 
 //hide unguessed letters in phraseHidden
 phraseHidden = hide(phrase);
@@ -38,9 +38,6 @@ function hide(x) {
     // console.log('hideExecuted');
     return x;
 }
-// console.log(phraseHidden);
-
-
 
 //refresh HTML
 function refreshDisp() {
@@ -84,15 +81,11 @@ function newGuess() {
            // console.log(phraseHidden);
         }
         // console.log(attempts);
-    } else {
-        // console.log('notNewGuess');
-        // console.log(attempts);
     }
     //clear letter from HTML form
     document.getElementById('newLetter').value = '';
     //refresh HTML displayed variables
     refreshDisp();
-    // console.log('newGuessExecuted')
     checkWin();
 }
 
@@ -110,3 +103,5 @@ function checkWin() {
         audio.play();
     }
 }
+
+newGuess(); //start this game by calling an empty guess
